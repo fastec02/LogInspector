@@ -32,7 +32,6 @@ class LI():
       ac = 0
       while line:
         parsed_line = parser(line)
-#        print(parsed_line)
         #
         timeobj = parsed_line["time_received_datetimeobj"]
         if timeobj < time_from or time_to < timeobj:
@@ -73,7 +72,6 @@ class LI():
   def LogListPrinter(self):
     for page in self.log_list:
       print(page["time_received"],page["remote_host"],page["remote_logname"],page["remote_user"],page["request_first_line"],page["status"],page["request_header_user_agent"])
-#      pprint(page)
 
   def AC_AtHost(self):
     counter = {}

@@ -1,4 +1,3 @@
-import argparse
 import subprocess
 import sys
 import datetime
@@ -35,7 +34,7 @@ def print_message():
   print()
   print(" \033[07mStreamMode     : M         --Change mode to stream for big data\033[0m")
   print("-----------------------------------------------------------------")
-  print("(LI)>",end="")
+
 print_banner()
 print("[*]Connect your log file")
 print("(LI)>",FILE)
@@ -45,9 +44,14 @@ try:
 except Exception as e:
   print("[!]Input File Error:",str(e))
 
+
+cmd = ""
 while True:
   print_message()
-  cmd = input()
+  cmd = ""
+  while not cmd:
+    print("(LI)>",end="")
+    cmd = input()
   #
   if cmd == "Q" or cmd == "q": break
   #
