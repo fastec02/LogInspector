@@ -20,7 +20,7 @@
     python3 LogInspector.py
 
 ## LI
-LI.pyは本体である解析をするためのライブラリです。
+LI.pyは本体であるApacheログを解析するためのライブラリです。
 ***
 **log_list**
 
@@ -190,22 +190,22 @@ pandasで受け取れるものは大体出力することができますが、�
 
 として設定されています。
 
- - AddFile	
+ - AddFile  
  -**LogReceiver**
- - ShowLog
+ - ShowLog  
  -**LogListPrinter**
- - FlashLog
+ - FlashLog  
  -**LogInitializer**
- - CountAccess
- -**AC_AtTime**
- -**AC_AtHost**
- - ParseLog
+ - CountAccess  
+ -**AC_AtTime**  
+ -**AC_AtHost**  
+ - ParseLog  
  -**LogListParser**
- - OutputOption
- -ファイル出力を有効/無効にする
- -出力するファイルの名前を設定する
- - StreamMode
- -**StreamLogReceiver**
+ - OutputOption  
+ -ファイル出力を有効/無効にする  
+ -出力するファイルの名前を設定する  
+ - StreamMode  
+ -**StreamLogReceiver**  
  
  というように、各コマンドでそれぞれの機能を確認・使用することができます。  
  OutputOptionで設定後は、ShowLog、CountAccessの出力結果がファイルで出力されます。  
